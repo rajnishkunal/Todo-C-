@@ -1,0 +1,45 @@
+﻿@model TodoViewModel
+
+<div class="container py-4 tasks" style="margin-top:20px;  background-color: navajowhite;">
+    <div class="card border-0">
+        <div class="card-body p-4">
+            <h4 class="mb-4">My Tasks</h4>
+            
+            <div class="table-responsive">
+                <table class="table align-middle mb-0">
+                    <thead>
+                        <tr style="background-color: #e9ecef;">
+                            <th scope="col" style="width: 80px;" class="ps-3">ID</th>
+                            <th scope="col">Task Name</th>
+                            <th scope="col" style="width: 150px;" class="text-end pe-3">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var t in Model.TodoList)
+                        {
+                            <tr style="background-color: white;">
+                                <td class="text-muted ps-3">@t.Id</td>
+                                <td>@t.Name</td>
+                                <td class="text-end pe-3">
+                                    <button type="button" class="btn btn-sm btn-light me-2" onClick="populateForm(@t.Id)">
+                                        Edit
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-light" onClick="deleteTodo(@t.Id)">
+                                        Delete
+                                    </button>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            
+            @if (!Model.TodoList.Any())
+            {
+                <div class="text-center py-5">
+                    <p class="text-muted">No tasks available</p>
+                </div>
+            }
+        </div>
+    </div>
+</div>
