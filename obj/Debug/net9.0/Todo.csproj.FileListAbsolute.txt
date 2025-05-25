@@ -84,3 +84,4 @@ E:\Capsitech\Module_5_Kunal_Rajnish\Todo\Todo\obj\Debug\net9.0\refint\TodoApp.dl
 E:\Capsitech\Module_5_Kunal_Rajnish\Todo\Todo\obj\Debug\net9.0\TodoApp.pdb
 E:\Capsitech\Module_5_Kunal_Rajnish\Todo\Todo\obj\Debug\net9.0\Todo.genruntimeconfig.cache
 E:\Capsitech\Module_5_Kunal_Rajnish\Todo\Todo\obj\Debug\net9.0\ref\TodoApp.dll
+E:\Capsitech\Module_5_Kunal_Rajnish\Todo\Todo\obj\Debug\net9.0\Todo.sourcelink.json
